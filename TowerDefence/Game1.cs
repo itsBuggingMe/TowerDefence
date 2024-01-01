@@ -55,7 +55,20 @@ namespace TowerDefence
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             ShapeBatch = new ShapeBatch(GraphicsDevice, Content);
-            // TODO: use this.Content to load your game content here
+
+            Content.Load<Texture2D>("basicBase");
+            Content.Load<Texture2D>("basicTop");
+            Content.Load<Texture2D>("basicWhole");
+            Content.Load<Texture2D>("bomb");
+            Content.Load<Texture2D>("coin");
+            Content.Load<Texture2D>("heart");
+            Content.Load<Texture2D>("level2enemy");
+            Content.Load<Texture2D>("level3enemy");
+            Content.Load<Texture2D>("SplashAll");
+            Content.Load<Texture2D>("SplashTop");
+
+            Content.Load<SpriteFont>("defaultFont");
+            Content.Load<SpriteFont>("largeFont");
         }
 
         bool GameInLimbo = false;
