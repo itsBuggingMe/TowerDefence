@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Runtime.ConstrainedExecution;
 using System.Text.Json.Serialization;
 
@@ -11,6 +12,7 @@ namespace PathGenerator
 {
     public class Game1 : Game
     {
+        
         private GraphicsDeviceManager _graphics;
         private ShapeBatch sb;
 
@@ -18,6 +20,7 @@ namespace PathGenerator
 
         public Game1()
         {
+            
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
